@@ -1,7 +1,11 @@
+import { PigmentOptions, withPigment } from "@pigment-css/nextjs-plugin";
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
-export default nextConfig;
+const nextConfig: NextConfig = {};
+
+const pigmentConfig: PigmentOptions = {};
+
+export default withPigment(withNextIntl(nextConfig), pigmentConfig);
