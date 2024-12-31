@@ -1,5 +1,3 @@
-import { Tolgee, DevTools } from "@tolgee/react";
-
 export const ALL_LANGUAGES = ["en", "ko"];
 
 export const DEFAULT_LANGUAGE = "en";
@@ -23,8 +21,4 @@ export async function getStaticData(
   }
 
   return result;
-}
-
-export function TolgeeBase() {
-  return Tolgee().use(DevTools());
 }

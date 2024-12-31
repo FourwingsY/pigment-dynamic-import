@@ -4,7 +4,7 @@ import { TolgeeProvider, TolgeeStaticData } from "@tolgee/react";
 import { useEffect } from "react";
 
 import { useRouter } from "@/lib/useNavigation";
-import { TolgeeBase } from "./shared";
+import { TolgeeBase } from "./config";
 
 const tolgee = TolgeeBase().init();
 
